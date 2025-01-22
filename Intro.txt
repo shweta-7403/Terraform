@@ -1,0 +1,80 @@
+** What Is Terraform?
+
+Terraform is an open-source Infrastructure as code (Iac) tool.
+
+** What is Iac?
+
+Tools allow you to manage infrastructure with configuration files rather than through a graphical user interface.
+
+Different Iac Tools like terraform,ansible,cloud formationand chef,puppet.
+
+** Feature
+
+1. Support multiple cloud
+2. learning easy
+3. Integrate multiple tools such as configuration management tool like ansible and puppet.
+4. Free to use
+5. Track resource with state
+
+** Workflow
+
+Scope --- Author --- Initilialize --- plan --- apply
+
+** Setup Terraform using Hashicorp doc
+
+For Ubuntu/Debian
+
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+
+wget -O- https://apt.releases.hashicorp.com/gpg | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+
+
+gpg --no-default-keyring \
+--keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
+--fingerprint
+
+
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+
+sudo apt update && apt-get install terraform -y
+
+Now Verify terraform --version
+
+** Install vscode and hashicrop terraform extension
+
+** Need Aws Account 
+
+Create aws account and create IAM user and attach permissiom of administrator access also generate secret kry
+
+
+Terraform Important Commands
+
+Initialization
+ • terraform init
+ • terraform plan
+ • terraform apply
+ • terraform destroy
+ • terraform destroy -target=RESOURCE_ADDRESS
+ • terraform apply -target=RESOURCE_ADDRESS
+
+Viewing State
+ • terraform show
+ • terraform state list
+ • terraform state show RESOURCE_ADDRESS
+
+Managing State
+ • terraform state rm RESOURCE_ADDRESS
+ • terraform state mv SOURCE_RESOURCE DEST_RESOURCE
+
+Importing Existing Infrastructure
+ • terraform import RESOURCE_ADDRESS ID
+
+Formatting and Validating
+ • terraform fmt
+ • terraform validate
+
