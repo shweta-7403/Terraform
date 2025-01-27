@@ -20,7 +20,7 @@ In this repo, we aim to understand the practical applications of Terraform, its 
 Before getting started with this repository, you need to have the following tools and accounts:
 
 - **Terraform**: Install Terraform on your local machine. You can find the installation guide [here](https://learn.hashicorp.com/tutorials/terraform/install-cli).
-- **Git**: Ensure that Git is installed and configured on your system. Download it [here](https://git-scm.com/).
+- **Git**: Ensure that Git is installed and configured on your system.
 - **Cloud Provider Account**: Sign up for a cloud provider (AWS, GCP, Azure, etc.) and configure your credentials to allow Terraform to provision resources.
 
 ## Getting Started 💻
