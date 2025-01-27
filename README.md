@@ -8,12 +8,12 @@ In this repo, we aim to understand the practical applications of Terraform, its 
 
 ## Table of Contents 📚
 
-- [Getting Started](#getting-started)
-- [Terraform Basics](#terraform-basics)
-- [Version Control with Git](#version-control-with-git)
-- [Working with AWS](#working-with-AWS)
-- [Terraform State](#terraform-state)
-- [Terraform module](#terraform-module)
+- [Getting Started]
+- [Terraform Basics]
+- [Version Control with Git]
+- [Working with AWS]
+- [Terraform State]
+- [Terraform module]
 
 ## Prerequisites ⚙️
 
